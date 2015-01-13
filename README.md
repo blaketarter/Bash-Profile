@@ -1,2 +1,2 @@
 # Bash-Profile
-My personal bash file
+My personal bash profile
