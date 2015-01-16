@@ -88,3 +88,6 @@ alias longcat="adb logcat -v long"
 
 #open atom text editor
 alias atom='open -a "Atom"'
+
+#release and install an app
+alias restall="cd ~/sites/omnibox/platforms/android && ant release && adb install -rd ~/sites/omnibox/platforms/android/bin/OMNIBOXTVLaunch-release.apk"
