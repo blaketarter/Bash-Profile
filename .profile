@@ -91,3 +91,9 @@ alias atom='open -a "Atom"'
 
 #release and install an app
 alias restall="cd ~/sites/omnibox/platforms/android && ant release && adb install -rd ~/sites/omnibox/platforms/android/bin/OMNIBOXTVLaunch-release.apk"
+
+#log stream related information
+alias streamlog="adb logcat -v time | grep -E 'amffmpeg|M3uParser|M3uSession|AmlogicPlayer|amplayer'"
+
+#install the signed omnibox apk to the currently connected device
+alias installomni="adb install -r /Users/blake/Sites/omnibox/platforms/android/bin/OMNIBOXTVLaunch-release.apk"
