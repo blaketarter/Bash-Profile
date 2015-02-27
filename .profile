@@ -55,7 +55,7 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/blake/drush
 
 #open google chrome without web security
-alias chrome="open /Applications/Google\ Chrome.app --args --disable-web-security"
+alias chrome="open /Applications/Google\ Chrome\ Canary.app --args --disable-web-security"
 
 #adds android sdk stuff to PATH
 export PATH=${PATH}:/Applications/android_dev/sdk/platform-tools:/Applications/android_dev/sdk/tools
@@ -95,5 +95,11 @@ alias restall="cd ~/sites/omnibox/platforms/android && ant release && adb instal
 #log stream related information
 alias streamlog="adb logcat -v time | grep -E 'amffmpeg|M3uParser|M3uSession|AmlogicPlayer|amplayer'"
 
+#find a 404 in stream
+alias streamlog404="adb logcat -v time | grep -E 'amffmpeg|M3uParser|M3uSession|AmlogicPlayer|amplayer' | grep '404'"
+
 #install the signed omnibox apk to the currently connected device
 alias installomni="adb install -r /Users/blake/Sites/omnibox/platforms/android/bin/OMNIBOXTVLaunch-release.apk"
+
+#see whats going on up in here
+alias whaddup="pwd && echo ' ' && ls -hla && echo ' ' && g status"
